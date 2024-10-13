@@ -9,8 +9,8 @@ To set up the project for local development:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/connect-4-extension.git
-   cd connect-4-extension
+   git clone https://github.com/subhranshudas/connect4-chrome-ext.git
+   cd connect4-chrome-ext
    ```
 
 2. Install dependencies:

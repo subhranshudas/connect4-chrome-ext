@@ -1,4 +1,7 @@
 {
+  "name": "connect4-chrome-ext",
+  "version": "1.0.0",
+  "author": "subhranshudas",
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack serve --mode development"
