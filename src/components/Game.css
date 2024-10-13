@@ -1,0 +1,147 @@
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 5px currentColor;
+  }
+  50% {
+    text-shadow: 0 0 20px currentColor, 0 0 30px currentColor;
+  }
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 472px;
+  margin: 0 auto;
+}
+
+.game-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-status {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.text-black {
+  background-color: white;
+  color: black;
+}
+
+.text-white {
+  background-color: black;
+  color: white;
+}
+
+.current-player-info,
+.winner-info {
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-player-label {
+  margin-right: 10px;
+}
+
+.winner-info {
+  animation: zoomInOut 1s ease-in-out 5;
+}
+
+.winner-label {
+  font-size: 1.5rem;
+  animation: glow 2s ease-in-out infinite;
+}
+
+.winner-label-suffix {
+  font-size: 1.5rem;
+}
+
+.player-red {
+  color: red;
+  font-weight: bold;
+}
+
+.player-yellow {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.winner-label,
+.winner-label-suffix {
+  font-size: 1.2rem;
+}
+
+.winner-label {
+  margin-right: 5px;
+}
+
+.new-game-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-game-button:hover {
+  background-color: #45a049;
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.game-title {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.help-icon {
+  background-color: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.help-icon:hover {
+  background-color: #007bff;
+  color: white;
+}

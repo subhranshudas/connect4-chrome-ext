@@ -1,0 +1,10 @@
+.board {
+  display: inline-block;
+  background-color: #0066cc;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+}

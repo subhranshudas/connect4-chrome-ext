@@ -1,0 +1,23 @@
+body {
+  min-width: 472px;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  max-width: 472px;
+  margin: 0 auto;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
